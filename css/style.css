@@ -1,0 +1,470 @@
+/* = Clearfix.
+		-------------------------------------------------------------- */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style-type: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-image: url(../images/bg.png);
+  margin: 0;
+}
+.container {
+  width: 70%;
+  margin: 0 0 0px 222px;
+  position: relative;
+}
+.container header {
+  zoom: 1;
+}
+.container header:before,
+.container header:after {
+  content: "";
+  display: table;
+}
+.container header:after {
+  clear: both;
+}
+.container header a img {
+  margin-top: 23px;
+}
+.container header nav {
+  float: right;
+  margin-top: 70px;
+  top: 60px;
+  right: 20px;
+}
+.container header nav li {
+  display: inline;
+}
+.container header nav li a {
+  font-size: 20px;
+  padding: 20px 16px;
+  border-radius: 10px;
+}
+.container header nav li a:hover {
+  background: #00CCFF;
+  color: white;
+}
+main {
+  margin: 0 0 0px 10px;
+  margin-top: 22px;
+}
+main .test {
+  zoom: 1;
+}
+main .test:before,
+main .test:after {
+  content: "";
+  display: table;
+}
+main .test:after {
+  clear: both;
+}
+main .test div.h1h2 {
+  float: left;
+  margin-top: 24px;
+}
+main .test div.h1h2 h1 {
+  font-size: 60px;
+  font-weight: normal;
+  color: #663366;
+  margin-bottom: 26px;
+}
+main .test div.h1h2 h2 {
+  font-size: 17px;
+  font-weight: normal;
+}
+main .test img {
+  float: right;
+  margin-left: 56px;
+}
+main .main-center section {
+  zoom: 1;
+  width: 30%;
+  display: inline-block;
+  padding-right: 30px;
+  line-height: 1.5;
+  font-size: 13px;
+  color: black;
+}
+main .main-center section:before,
+main .main-center section:after {
+  content: "";
+  display: table;
+}
+main .main-center section:after {
+  clear: both;
+}
+main .main-center section h3 {
+  color: #00CCFF;
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 14px;
+}
+main .main-center section a {
+  color: #663366;
+  float: right;
+  font-size: 14px;
+}
+main .main-center section p {
+  margin-bottom: 20px;
+}
+main .main-down {
+  zoom: 1;
+  margin-bottom: 0;
+}
+main .main-down:before,
+main .main-down:after {
+  content: "";
+  display: table;
+}
+main .main-down:after {
+  clear: both;
+}
+main .main-down section {
+  line-height: 1.5;
+  color: black;
+  font-size: 13px;
+}
+main .main-down section h3 {
+  color: #00CCFF;
+  font-size: 28px;
+  font-weight: normal;
+  padding-top: 10px;
+  margin-bottom: 0 0 10px 0;
+}
+main .main-down .left {
+  float: left;
+  width: 55%;
+  margin-right: 10px;
+  position: relative;
+}
+main .main-down .right {
+  width: 42%;
+  float: right;
+}
+main .main-down .right p {
+  padding-left: 100px;
+  margin: 0;
+  width: 90%;
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+main .main-down .right p span {
+  position: absolute;
+  font-size: 50px;
+  color: #663366;
+  padding: 12px;
+  margin: 12px;
+  left: 0;
+  top: 50%;
+  display: block;
+  margin-top: -50px;
+}
+footer {
+  height: 90px;
+}
+footer .foot {
+  zoom: 1;
+  background: #663366;
+  margin: 0;
+  height: 90px;
+  padding: 0 230px;
+  color: white;
+  position: relative;
+  margin-bottom: 18px;
+  margin-top: 30px;
+  font-size: 13px;
+}
+footer .foot:before,
+footer .foot:after {
+  content: "";
+  display: table;
+}
+footer .foot:after {
+  clear: both;
+}
+footer .foot span {
+  float: left;
+  padding-top: 30px;
+}
+footer .foot span a {
+  color: white;
+  text-decoration: underline;
+}
+footer .foot p {
+  float: right;
+  padding-top: 12px;
+}
+/*
+.menu-carousel {
+		width: 520px;
+	    height: 264px;
+	    position: absolute;
+	    top: 110px;
+	    border: 3px solid black;
+	    border-radius: 5px;
+	    .fade {
+	    	opacity: 1;
+	    }
+	    .carousel-indicators-wrap {
+			display: none;
+		}
+		.carousel-inner {
+		.item.active {
+			opacity: 1;
+			position: relative;
+		}
+		.item {
+			min-height: 260px;
+			opacity: 0;
+			transition: opacity .5s;
+			top: 0;
+			left: 0;
+			width: 100%;
+			display: block;
+			position: absolute;
+			.bgslide {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+				background-position: center center;
+			}
+			.carousel-caption {
+				left: 205px;
+				top: 170px;
+			h3 {
+				background: #00CCFF;
+				color: white;
+				font-size: 14px;
+				height: 35px;
+				width: 300px;
+				margin-right: 10px;
+				text-align: right;
+			}
+			}
+		}
+		}
+}
+*/
+@media only screen and (max-width: 1400px) {
+  main .main-center section {
+      width: 29%;
+  }
+  main .test img {
+      float: right;
+      /* margin-left: 56px; */
+      width: 50%;
+  }
+}
+@media only screen and (max-width: 1241px) {
+  header nav ul {
+    padding: 0;
+  }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 85%;
+    margin-left: 70px;
+  }
+  .container header nav li a {
+    font-size: 19px;
+  }
+  main .test img {
+    width: 445px;
+    margin-left: 0;
+  }
+  main .main-center section {
+    zoom: 1;
+    width: 29%;
+  }
+}
+@media only screen and (max-width: 1027px) {
+  .container header nav li a {
+    padding: 20px 13px;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 85%;
+    margin: 0px 0 0 65px;
+  }
+  .container header nav {
+    margin-right: 0px;
+    margin-top: 60px;
+  }
+  .container header nav ul {
+    padding-left: 0;
+  }
+  .container header nav ul a {
+    font-size: 19px;
+  }
+  main .main-down .right p {
+    width: 100%;
+  }
+  main .test img {
+    width: 253px;
+    margin-left: 0;
+  }
+  main .main-center {
+    zoom: 1;
+  }
+  main .main-center:before,
+  main .main-center:after {
+    content: "";
+    display: table;
+  }
+  main .main-center:after {
+    clear: both;
+  }
+  main .main-center section {
+    width: 28%;
+    float: left;
+  }
+  footer .foot {
+    padding: 0 70px;
+  }
+}
+@media only screen and (max-width: 938px) {
+  .container header nav {
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0 0 0px 30px;
+    width: 91%;
+  }
+  .container header nav {
+    margin-top: 0;
+  }
+  .container header nav ul li {
+    padding-right: 15px;
+  }
+  .container header nav ul li a {
+    font-size: 18px;
+    padding: 10px;
+  }
+  main .test div.h1h2 {
+    text-align: center;
+    width: 50%;
+  }
+  main .test img {
+    width: 378px;
+    margin-top: 15px;
+    margin-left: 0;
+    width: 50%;
+  }
+  main .main-down .right {
+    width: 100%;
+  }
+  main .main-down .right p {
+    width: 100%;
+    margin-top: 10px;
+  }
+  main .main-down .left {
+    width: 100%;
+  }
+  main .main-center section {
+    width: 28%;
+  }
+}
+main .test div.h1h2 h1 {
+  font-size: 45px;
+}
+@media only screen and (max-width: 667px) {
+  main .test div.h1h2 {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+  }
+  main .test img {
+    width: 100%;
+  }
+  main .main-center section {
+    width: 100%;
+  }
+  .container header nav ul li {
+    padding-right: 10px;
+  }
+  .container header nav ul li a {
+    font-size: 14px;
+    padding: 0px;
+    font-weight: 600;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 0px 0 0px 0px;
+  }
+  main .main-down .right {
+    width: 100%;
+    /* float: right; */
+  }
+  .right p {
+    padding-right: 2px;
+  }
+  .container header nav {
+    margin: 0;
+    width: 459px;
+  }
+  main .test img {
+    width: 260px;
+    margin: 0px 86px;
+  }
+  .container header nav ul a {
+    font-size: 13px;
+    padding: 6px;
+  }
+  main .test div.h1h2 {
+    text-align: center;
+    width: 100%;
+  }
+  main .main-center section {
+    width: 100%;
+  }
+  main .main-center section {
+    width: 91%;
+  }
+  .container header nav {
+    margin: 0;
+    width: 430px;
+  }
+  footer .foot span a {
+    font-size: 12px;
+  }
+  footer .foot {
+      padding: 0 20px;
+  }
+  footer .foot p {
+      padding-top: 0;
+  }
+}
